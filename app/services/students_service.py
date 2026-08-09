@@ -2,7 +2,7 @@ from app.utils import display
 
 def fetch_student(students, search_admission):
     for student in students:
-        if student['admission_number'].lower() == search_admission.lower() or student['name'].lower() == search_admission.lower():
+        if student['admission_number'].lower() == search_admission.lower() or  search_admission.lower() in student['name'].lower():
             return student
     return None
 
@@ -18,7 +18,7 @@ def search_student(students):
         search_name = input("Enter student name or admission number: ").strip()
         found_students = []
         found_students.append(fetch_student(students, search_name))
-        if found_students:
+        if len(found_students) > 1:
             display.view_student(found_students)
         else:
             print(f"No students found with the info '{search_name}'.")
@@ -40,10 +40,11 @@ def update_student(students):
             found_student['course'] = new_course
         print("Student updated successfully!")
         print(f"Updated Details\n Name: {found_student['name']}\n Admission Number: {found_student['admission_number']}\n Course: {found_student['course']}")
-        return
+        return True
 
     # If student is not found
     print("Student not found")
+    return False
     
     
 
@@ -56,13 +57,14 @@ def delete_student(students):
         if confirmation.lower() == 'y':
             students.remove(found_student)
             print("Student deleted successfully")
-            return
+            return True
         elif confirmation.lower() == 'n':
             print("Deletion cancelled")
-            return
+            return False
         else: 
             print("Invalid Input. Enter 'Y' to confirm deletion or 'N' to cancel.")
-            return
+            return False
            
     
     print("Student not found")
+    return False

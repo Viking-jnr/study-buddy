@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Victor Kasikwa",
+        "admission_number": "CIT-227-028/2023",
+        "course": "Software Engineering"
+    },
+    {
+        "name": "James Orengo",
+        "admission_number": "CIT-223-018/2023",
+        "course": "Computer Science"
+    },
+    {
+        "name": "Diana Mutheu",
+        "admission_number": "MSC-123-047/2026",
+        "course": "Mass Communication"
+    }
+]

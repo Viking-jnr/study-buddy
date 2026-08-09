@@ -9,3 +9,19 @@ def get_student_info():
             "course": student_course
         }
     return None
+
+def get_menu_choice():
+    while True:
+        try:
+            choice = int(input("Choose an option: "))
+            return choice
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+def get_valid_menu_choice():
+    while True:
+        choice = get_menu_choice()
+        if 1 <= choice <= 6:
+            return choice
+        print("Invalid Option. Enter a valid option (1-6)")
+        
