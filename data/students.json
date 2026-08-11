@@ -13,5 +13,15 @@
         "name": "Diana Mutheu",
         "admission_number": "MSC-123-047/2026",
         "course": "Mass Communication"
+    },
+    {
+        "name": "Daisy Chan",
+        "admission_number": "BSE-1234",
+        "course": "Business and Commerce"
+    },
+    {
+        "name": "Mercy Moraa",
+        "admission_number": "BUS-123-007",
+        "course": "Mechanics"
     }
 ]

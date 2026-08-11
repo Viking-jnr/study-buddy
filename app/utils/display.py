@@ -8,3 +8,8 @@ def view_student(students):
             print("========================================")
             print(f"Student {index}\n Name: {student['name']}\n Admission Number: {student['admission_number']}\n Course: {student['course']}")
             print("========================================")
+
+def display_student(student):
+    print("---------Found Student--------")
+    print(f" Name: {student['name']}\n Admission Number: {student['admission_number']}\n Course: {student['course']}")
+
