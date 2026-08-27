@@ -20,5 +20,7 @@ def save_students(students):
     try:
         with open(path , 'w') as file:
              json.dump(students, file, indent=4)
+    except TypeError as e:
+        print(f"Error: {e}. Cannot be converted to JSON")
     except Exception as e:
         print(f"Error: {e}. Could not save students to file.")

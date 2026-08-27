@@ -22,6 +22,11 @@
     {
         "name": "Mercy Moraa",
         "admission_number": "BUS-123-007",
-        "course": "Mechanics"
+        "course": "Mechanical Engineering"
+    },
+    {
+        "name": "Tony Dennis",
+        "admission_number": "BSU-000-111",
+        "course": "Hunting and Gathering"
     }
 ]

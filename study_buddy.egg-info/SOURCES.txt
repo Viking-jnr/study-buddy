@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+app/menu.py
+app/services/storage_service.py
+app/services/students_service.py
+app/utils/display.py
+app/utils/input_handler.py
+app/utils/validators.py
+study_buddy.egg-info/PKG-INFO
+study_buddy.egg-info/SOURCES.txt
+study_buddy.egg-info/dependency_links.txt
+study_buddy.egg-info/top_level.txt
+tests/test_app.py
